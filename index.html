@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/reset.css">
+<style>
+  .wrap{
+    width: 100%;
+    display: flex;
+  }
+
+  .item{
+    width: 25%;
+    position: relative;
+  }
+  
+
+  .item img{
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .item .txt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+
+  .item:hover .txt{
+    opacity: 1;
+  }
+
+  .item h2{
+    font-size: 32px;
+    color: #ff0;
+    font-weight: 500;
+  }
+
+  .item h2::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 10px 0;
+    background-color: #ff0;
+    /* transition: 對像 作用秒數 delay秒數; */
+    transition: width .5s .5s;
+  }
+
+  .item:hover h2::after{
+    width: 100%;
+  }
+
+  .item p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+  }
+
+</style>
+<body>
+  <div class="wrap">
+    <div class="item">
+      <img src="https://picsum.photos/500/500/?random=1">
+      <div class="txt">
+        <h2>金魚都能懂的這個網頁畫面怎麼切：互動圖文卡片</h2>
+        <p>互動圖文儔片是我們在網頁中經常見到的另一種稀飯版。不會切你就遜掉了</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/500/500/?random=2">
+      <div class="txt">
+        <h2>金魚都能懂的這個網頁畫面怎麼切：互動圖文卡片</h2>
+        <p>互動圖文儔片是我們在網頁中經常見到的另一種稀飯版。不會切你就遜掉了</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/500/500/?random=3">
+      <div class="txt">
+        <h2>金魚都能懂的這個網頁畫面怎麼切：互動圖文卡片</h2>
+        <p>互動圖文儔片是我們在網頁中經常見到的另一種稀飯版。不會切你就遜掉了</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/500/500/?random=4">
+      <div class="txt">
+        <h2>金魚都能懂的這個網頁畫面怎麼切：互動圖文卡片</h2>
+        <p>互動圖文儔片是我們在網頁中經常見到的另一種稀飯版。不會切你就遜掉了</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
