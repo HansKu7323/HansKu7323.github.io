@@ -61,26 +61,35 @@ header{
 .logo{
   width: 50px;
   height: 50px;
-  margin-left: 10px;
+ 
 }
 .logo img{
   width: 100%;
   /* vertical-align: middle; */
 }
-h1 a{
+h1 a,
+h4 a{
   font-size: 30px;
   color: #fff;
   margin-left: 10px;
+}
+h1 a:hover{
+  color: #a6e22c;
 }
 
 /* nav */
 .page-nav{
   text-align: center;
+  margin-left: 10px;
 }
 .page-nav a{
   color: #333;
-  text-decoration: none;
+  margin-right: 10px;
 }
+.page-nav a:hover{
+  color: #a6e22c;
+}
+
 
 
 /* banner */
@@ -117,6 +126,11 @@ footer{
   display: flex;
   justify-content: center;
 }
+h4 a:hover,
+.fa-facebook-square:hover,
+.fa-instagram:hover{
+  color: #a6e22c;
+}
 
 
 /*----- back to top button -----*/
@@ -146,21 +160,11 @@ footer{
 /* responsive */
 @media screen and (min-width: 768px){
   /* nav */
-  .page-nav{
-    margin-left: 10px;
-  }
+
   .page-nav a{
     font-size: 22px;
-    margin-right: 10px;
   }
-  .page-nav a:hover{
-    color: #a6e22c;
-  }
-
-  .banner{
-    padding:0 10px;
-  }
-
+  
   .title{
     margin: 0 10px;
   }
