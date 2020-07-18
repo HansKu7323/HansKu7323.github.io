@@ -65,7 +65,7 @@ header{
 }
 .logo img{
   width: 100%;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 h1 a,
 h4 a{
@@ -80,7 +80,6 @@ h1 a:hover{
 /* nav */
 .page-nav{
   text-align: center;
-  margin-left: 10px;
 }
 .page-nav a{
   color: #333;
@@ -91,12 +90,29 @@ h1 a:hover{
 }
 
 
+/* ------ slider -------- */
+.slider {
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+}
+.slider img{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 
 /* banner */
-.banner img{
+/* .banner img{
   width: 100%;
   vertical-align: middle;
-}
+} */
 
 
 /* footer */
@@ -108,7 +124,7 @@ footer{
 }
 .footer-info h4,
 .footer-info p,
-.footer-info .fab{
+.fab{
   color: #fff;
   margin-bottom: 5px;
 }
@@ -160,9 +176,8 @@ h4 a:hover,
 /* responsive */
 @media screen and (min-width: 768px){
   /* nav */
-
   .page-nav a{
-    font-size: 22px;
+    font-size: 18px;
   }
   
   .title{
@@ -175,6 +190,23 @@ h4 a:hover,
 
   .item-group{
     display: flex;
+  }
+
+  /* slider */
+  .slider {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
   }
   
 }/* 削除だめ */
